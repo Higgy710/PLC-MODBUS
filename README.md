@@ -1,3 +1,6 @@
+![PLC Setup](https://user-images.githubusercontent.com/47610444/144299678-3d659c47-d216-4762-afab-4b155440861d.jpg)
+
+
 # Objectives:
 1. Design an op amp circuit that converts the output of the TMP17 Temperature Transducer made by Analog Devices to a voltage suitable for our PLC. Specifically, design it so that it converts a temperature range of `50degF to 90degF` into a voltage range of `2VDC to 8VDC`.
 2. Use `PyModbus` to comunicate with PLC through TCP using MODPUS protocol and stuctured text/ladder logic in Machine Expert – Basic.
@@ -95,5 +98,11 @@ The light bulb is controlled connected to a relay that can be controlled via an 
 
 Figure 10: Results of PySimpleGUI
 
+Mini HVAC system:
+![Mini HVAC system](https://user-images.githubusercontent.com/47610444/144299720-2cd91826-5fd5-43bc-b5aa-35dd97a051d7.jpg)
 
-## TODO: Implement a PID system
+Mini HVAC system with heater on:
+![Heater on](https://user-images.githubusercontent.com/47610444/144299718-e7aa18c6-0eff-4ccd-853b-fe7c4dfa9791.jpg)
+
+
+## Work in progress: Implement a PID system

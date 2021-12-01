@@ -40,33 +40,32 @@ The light bulb is controlled connected to a relay that can be controlled via an 
 ![image](https://user-images.githubusercontent.com/47610444/144168350-97eaabce-88b9-4b08-b9ce-1ca1023988ee.png)
 
 
-Figure 1: Python: Reading a value from the ADC
+*Figure 1: Python: Reading a value from the ADC*
 
 ![image](https://user-images.githubusercontent.com/47610444/144168670-1cb5b831-b334-48e0-b9ce-57fae23e22f2.png)
 ![image](https://user-images.githubusercontent.com/47610444/144168636-dfdbce36-e0f3-4072-881c-50d57b4d3f43.png)
 
-Figure 2: PLC Ladder Logic & Structured Text for Part 2
-
+*Figure 2: PLC Ladder Logic & Structured Text for Part 2*
 
 3.	Figure 3 below shows the coding for converting the ADC value from the MW2 register to °F and figure 4 shows them being displayed to the terminal, in one second intervals.
 
 ![image](https://user-images.githubusercontent.com/47610444/144168462-23ab81ee-0363-4f52-b426-a6b9e5a167bb.png)
 
-Figure 3: Python code to convert ADC to °F
+*Figure 3: Python code to convert ADC to °F*
 
 ![image](https://user-images.githubusercontent.com/47610444/144168473-81b7f508-196f-4ed8-a390-83843ebc3038.png)
 
-Figure 4: Displays temp values to terminal
+*Figure 4: Displays temp values to terminal*
 
 4.	The detection of %I0.1 being pressed is shown in figure 2 on rung 8. Figures 5 and 6 below show the python code for determining if memory bit M9 has been tripped and changes the units from °F to °C to K.
 
 ![image](https://user-images.githubusercontent.com/47610444/144168777-dedb1ccc-454f-465c-a2a3-4fcb73dc74b5.png)
  
-Figure 5: Python code for changing temperature units
+*Figure 5: Python code for changing temperature units*
 
 ![image](https://user-images.githubusercontent.com/47610444/144168788-af4c8002-dafe-49d6-817b-4118c928dd34.png)
 
-Figure 6: Conversion from °F to °C to K
+*Figure 6: Conversion from °F to °C to K*
 
 5.	Rung 11 in figure 2 determines if the ADC value from IW0.1 is greater than the value stored in register MW0.
 
@@ -74,19 +73,19 @@ Figure 6: Conversion from °F to °C to K
 
 ![image](https://user-images.githubusercontent.com/47610444/144168823-f6c1c14b-a8a1-4121-a957-f0ec58e51e04.png)
  
-Figure 7: Writing the threshold value to MW0
+*Figure 7: Writing the threshold value to MW0*
 
 7.	Figure 8 below shows the python code for turning on the LED on Q0.1 and displaying “HIGH TEMP ALERT” to the terminal.
 
 ![image](https://user-images.githubusercontent.com/47610444/144168885-f404f340-6089-4e9c-a827-aee0cb5c5258.png)
 
-Figure 8: Turn on LED and display “HIGH TEMP ALERT”
+*Figure 8: Turn on LED and display “HIGH TEMP ALERT”*
 
 8.	Show in figure 7. This block of code is outside of the main loop.
 
 ![image](https://user-images.githubusercontent.com/47610444/144168941-b518ed72-2ad1-4bfb-8ebc-0e2269d494c6.png)
 
-Figure 9: ADC and temp values displayed on terminal
+*Figure 9: ADC and temp values displayed on terminal*
 
 
 
@@ -95,3 +94,6 @@ Figure 9: ADC and temp values displayed on terminal
 ![PySimpleGUI Screenshot](https://user-images.githubusercontent.com/47610444/144169043-c2a7829e-10b5-4e78-907b-42257944d79d.png)
 
 Figure 10: Results of PySimpleGUI
+
+
+## TODO: Implement a PID system

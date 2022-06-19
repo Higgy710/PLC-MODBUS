@@ -96,7 +96,7 @@ The light bulb is controlled connected to a relay that can be controlled via an 
 
 ![PySimpleGUI Screenshot](https://user-images.githubusercontent.com/47610444/144169043-c2a7829e-10b5-4e78-907b-42257944d79d.png)
 
-Figure 10: Results of PySimpleGUI
+*Figure 10: Results of PySimpleGUI*
 
 Mini HVAC system:
 ![Mini HVAC system](https://user-images.githubusercontent.com/47610444/144299720-2cd91826-5fd5-43bc-b5aa-35dd97a051d7.jpg)
